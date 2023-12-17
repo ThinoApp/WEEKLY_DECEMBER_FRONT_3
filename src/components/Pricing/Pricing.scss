@@ -1,0 +1,139 @@
+@use '/src/assets/global';
+.Pricing {
+    @include global.paddingInline;
+    @apply w-full flex flex-col items-center py-28 gap-8 relative;
+
+    .pricing-shape-1 {
+        @apply block absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0;
+        z-index: 1;
+    }
+    h2 {
+        @apply text-[59px] text-center leading-[59px] relative;
+        font-family: Montserrat Alternates;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        img {
+            @apply object-cover w-20 absolute left-0 top-0 -scale-x-100 -translate-x-1/2 -translate-y-1/2;
+        }
+    }
+    h3 {
+        @apply text-[23px] text-center;
+        //styleName: H3/Style 1;
+        font-family: Montserrat Alternates;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .pricing-listes {
+        @apply relative w-full flex flex-col items-center gap-8 lg:gap-4 lg:flex-row lg:items-stretch;
+        .pricing-shape-2 {
+            @apply w-16 object-cover  absolute right-0 translate-x-1/2 top-0 -translate-y-1/2;
+            z-index: -1;
+        }
+
+        .pricing-shape-3 {
+            @apply w-16 object-cover  absolute left-0 -translate-x-1/2 bottom-0 translate-y-1/2;
+            z-index: -1;
+        }
+        li.popular {
+            & > div.main-content {
+                @apply border-vermillon bg-tertiary;
+            }
+
+            & > div.included-container {
+                @apply border-vermillon bg-tertiary;
+            }
+        }
+        li.pricing-item {
+            @apply w-full flex flex-col items-center gap-2 sm:flex-row sm:items-stretch lg:flex-col lg:items-stretch lg:w-auto lg:flex-1;
+
+            .main-content {
+                @apply bg-white relative  w-full sm:w-auto sm:flex-1 lg:min-h-[53vh] lg:max-h-[53vh] px-4 py-8 lg:px-8 flex flex-col gap-3 rounded-md;
+                border: 1.5px solid #000000;
+                .heading {
+                    @apply flex flex-col items-center lg:flex-row lg:justify-between;
+                    span {
+                        //styleName: Small/Bold;
+                        @apply bg-vermillon py-2 px-4 rounded-md text-white;
+                        font-family: Montserrat Alternates;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                    }
+                    h3 {
+                        @apply text-[37px] lg:text-[27px] text-center;
+                        font-family: Montserrat Alternates;
+                        font-weight: 700;
+                        letter-spacing: -0.02em;
+                    }
+                }
+
+                p.description {
+                    @apply text-[14px] leading-[22px] text-center text-[#4D4D4D] lg:text-left;
+                    font-family: Montserrat Alternates;
+                    font-weight: 500;
+                    letter-spacing: 0em;
+                }
+                & > div {
+                    &:nth-of-type(1) {
+                        @apply lg:mt-8;
+                    }
+                    @apply flex flex-col items-center gap-4 mt-auto lg:flex-row lg:justify-between;
+                    button {
+                        @apply w-full sm:w-full lg:w-1/2;
+                        @apply px-8 py-5 rounded-lg bg-black text-white;
+                        font-family: Montserrat Alternates;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 17px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        box-shadow: 3px 3px 0px 0px #00000040;
+                    }
+                    p {
+                        @apply text-[#4D4D4D];
+                        span {
+                            @apply text-vermillon text-center;
+                            font-family: Montserrat Alternates;
+                            font-size: 23px;
+                            font-weight: 700;
+                            letter-spacing: -0.02em;
+                        }
+                        font-family: Montserrat Alternates;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .included-container {
+                @apply bg-white w-full sm:w-auto sm:flex-1 px-4 py-8 flex flex-col items-start rounded-md gap-4;
+                border: 1.5px solid #000000;
+                p {
+                    font-family: Montserrat Alternates;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                .included-liste {
+                    @apply flex flex-col items-start gap-4;
+                    li {
+                        @apply text-left list-disc mx-4;
+                        font-family: Montserrat Alternates;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

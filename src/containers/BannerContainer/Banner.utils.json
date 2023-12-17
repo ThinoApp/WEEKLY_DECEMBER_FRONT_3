@@ -1,0 +1,34 @@
+{
+    "covers": [
+        {
+            "id": 1,
+            "img": "/assets/images/cover-2.png",
+            "title": "Tesla Autopilot"
+        },
+        {
+            "id": 2,
+            "img": "/assets/images/cover-1.png",
+            "title": "Self–confidence"
+        },
+        {
+            "id": 3,
+            "img": "/assets/images/cover-3.png",
+            "title": "Perplexed Mind"
+        },
+        {
+            "id": 4,
+            "img": "/assets/images/cover-4.png",
+            "title": "Women’s Rights"
+        },
+        {
+            "id": 5,
+            "img": "/assets/images/cover-5.png",
+            "title": "Social Class"
+        }
+    ],
+    "supportedList": [
+        "/assets/images/Spotifyicons.png",
+        "/assets/images/Google Podcasticons.png",
+        "/assets/images/Youtubeicons.png"
+    ]
+}

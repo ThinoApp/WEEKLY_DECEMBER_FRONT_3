@@ -1,0 +1,48 @@
+.MenuMobile {
+    @apply w-3/4 relative flex justify-end sm:hidden;
+
+    .MenuMobile-content {
+        @apply absolute right-0 top-[34px] flex flex-col items-end border-black border-2 gap-2 px-4 py-4 bg-white rounded-xl;
+        ul {
+            @apply flex flex-col gap-4;
+            li {
+                @apply flex flex-row items-center;
+                //styleName: Body/Bold;
+                font-family: Montserrat Alternates;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+                &:nth-last-child(1) {
+                    @apply gap-4;
+                }
+
+                div {
+                    @apply rounded-full w-5 h-5 flex items-center justify-center;
+                    border: 1.5px solid #00000066;
+                }
+            }
+        }
+        .MenuMobile-btn-container {
+            @apply flex flex-col items-start gap-4;
+            button {
+                @apply w-full;
+                font-family: Montserrat Alternates;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: center;
+                &:nth-child(1) {
+                    @apply px-6 py-3 rounded-lg;
+                    border: 2px solid #000000;
+                }
+                &:nth-child(2) {
+                    @apply px-6 py-3 rounded-lg bg-black text-white;
+                    box-shadow: 3px 3px 0px 0px #00000040;
+                }
+            }
+        }
+    }
+}

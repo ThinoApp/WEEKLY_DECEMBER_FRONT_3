@@ -1,0 +1,101 @@
+@use '/src/assets/global';
+.Blog {
+    @include global.paddingInline;
+    @apply relative  w-full flex flex-col items-center gap-8 py-28;
+    .blog-shape-3 {
+        @apply block absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0;
+        z-index: 1;
+    }
+    h2 {
+        @apply text-[59px];
+        font-family: Montserrat Alternates;
+        font-weight: 700;
+        line-height: 71px;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+    h3 {
+        @apply text-[23px];
+        font-family: Montserrat Alternates;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    ul {
+        @apply relative w-full flex flex-col items-center gap-4;
+        @apply lg:flex-row items-stretch;
+        .blog-shape-1 {
+            @apply w-20 absolute left-0 top-0 -translate-x-[45%] -translate-y-[45%];
+            z-index: -1;
+        }
+        .blog-shape-2 {
+            @apply w-20 absolute bottom-0 right-0 translate-x-[50%] translate-y-[110%] -scale-y-[2] -scale-x-[2]  -rotate-[45deg];
+            z-index: -1;
+        }
+        li {
+            @apply bg-white flex flex-col p-4 gap-5;
+            border: 2px solid #000000;
+            &:hover {
+                box-shadow: 10px 10px 0px 0px #000000;
+            }
+            .subtitle {
+                color: #4d4d4d;
+
+                //styleName: Caption/Bold;
+                font-family: Montserrat Alternates;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            & > div {
+                @apply flex flex-col gap-4;
+                h3 {
+                    @apply text-vermillon;
+                    //styleName: H2/Style 2;
+                    font-family: Montserrat Alternates;
+                    font-size: 37px;
+                    font-weight: 700;
+                    line-height: 51px;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                }
+                p.description {
+                    color: #4d4d4d;
+
+                    //styleName: Caption/Medium;
+                    font-family: Montserrat Alternates;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                .bottom-container {
+                    @apply flex flex-col items-center gap-4;
+                    @apply lg:flex-row justify-between;
+                    .keywords-container {
+                        @apply flex flex-row gap-3;
+                        button {
+                            @apply px-4 py-2 rounded-md;
+                            border: 1px solid #4d4d4d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & > button {
+        @apply w-full sm:w-1/5;
+        @apply px-8 py-5 rounded-lg bg-black text-white;
+        font-family: Montserrat Alternates;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        box-shadow: 3px 3px 0px 0px #00000040;
+    }
+}

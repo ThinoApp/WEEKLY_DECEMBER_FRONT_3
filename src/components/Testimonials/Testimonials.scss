@@ -1,0 +1,99 @@
+@use '/src/assets/global';
+
+.Testimonials {
+    @include global.paddingInline;
+    @apply relative lg:pr-0 w-full bg-secondary py-12 flex flex-col items-center gap-4 sm:gap-8  overflow-hidden lg:py-28;
+
+    & > h2 {
+        @apply text-[40px] sm:text-[59px] leading-[51px] sm:leading-[71px] relative;
+
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        text-align: center;
+        // &::before {
+        //     content: '';
+        //     @apply block absolute sm:-translate-x-full -translate-y-[50%] sm:-translate-y-[60%] w-20 h-20;
+        //     background-image: url('/assets/images/Sparkle.svg');
+        //     background-size: cover;
+        // }
+        .testimonial-shape-1 {
+            content: '';
+            @apply block  absolute sm:-translate-x-[50%] lg:-translate-x-full -translate-y-[170%] sm:-translate-y-[120%] lg:-translate-y-[120%] w-20 h-20 object-cover;
+            background-size: cover;
+        }
+    }
+    h3 {
+        @apply leading-[30px] lg:mb-16;
+        //styleName: H3/Style 1;
+        font-family: Montserrat Alternates;
+        font-size: 23px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .Testimonials-liste {
+        @apply w-screen lg:w-full flex flex-row overflow-x-hidden overflow-y-hidden snap-x snap-mandatory gap-4 px-4;
+        .Testimonials-item {
+            @apply flex flex-col rounded-lg justify-end items-center min-w-[90%] max-w-[90%] snap-center scroll-smooth bg-white px-8  py-12 gap-2;
+            @apply sm:min-w-[70%] sm:max-w-[70%] duration-300;
+            @apply lg:min-w-[45%] lg:max-w-[50%] lg:items-start lg:h-[20rem];
+            &:not(.active) {
+                @apply opacity-50;
+            }
+            h2 {
+                @apply text-vermillon leading-3;
+                font-family: Montserrat Alternates;
+                font-size: 96px;
+                font-weight: 700;
+                // line-height: 115px;
+                letter-spacing: -0.02em;
+                text-align: center;
+            }
+            p {
+                @apply text-center lg:text-left text-[23px] lg:text-[18px];
+                font-family: Montserrat Alternates;
+                font-weight: 500;
+                line-height: 36px;
+                letter-spacing: 0em;
+            }
+            & > div {
+                @apply flex flex-col items-center gap-2 lg:flex-row lg:gap-4;
+                img {
+                    @apply w-7 h-7 rounded-full object-cover;
+                    &:nth-of-type(1) {
+                        @apply w-20 h-20 lg:w-14 lg:h-14;
+                    }
+                }
+                p {
+                    @apply text-center;
+                    font-family: Montserrat Alternates;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    &:nth-last-of-type(1) {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-navigation {
+        @apply flex flex-row gap-4 self-start lg:gap-8;
+        button {
+            @apply flex items-center justify-center;
+            @apply w-10 h-10 rounded-full border-black border-2;
+            &.disable-btn {
+                @apply opacity-50;
+            }
+            &:hover {
+                @apply border-vermillon;
+                .icon {
+                    @apply text-vermillon;
+                }
+            }
+        }
+    }
+}

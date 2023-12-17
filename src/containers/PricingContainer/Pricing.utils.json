@@ -1,0 +1,89 @@
+{
+    "pricing": [
+        {
+            "id": 1,
+            "title": "Member",
+            "description": "Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.",
+            "price": "$9.99",
+            "mostPopular": false,
+            "included": [
+                {
+                    "id": 1,
+                    "value": "Exclusive Content"
+                },
+                {
+                    "id": 2,
+                    "value": "5% Discount on Merch"
+                },
+                {
+                    "id": 3,
+                    "value": "Join the Community"
+                },
+                {
+                    "id": 4,
+                    "value": "Livestreaming Access"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Family",
+            "description": "Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.",
+            "price": "$14.99",
+            "mostPopular": true,
+            "included": [
+                {
+                    "id": 1,
+                    "value": "Everything in Tier 1",
+                    "bold": true
+                },
+                {
+                    "id": 2,
+                    "value": "Free tickets to Events"
+                },
+                {
+                    "id": 3,
+                    "value": "Limited Edition Merch"
+                },
+                {
+                    "id": 4,
+                    "value": "Promote your Product"
+                },
+                {
+                    "id": 5,
+                    "value": "Request Topic"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Official",
+            "description": "Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.",
+            "price": "$29.99",
+            "mostPopular": true,
+            "included": [
+                {
+                    "id": 1,
+                    "value": "Everything in Tier 2",
+                    "bold": true
+                },
+                {
+                    "id": 2,
+                    "value": "Exclusive Badge on Livestreaming"
+                },
+                {
+                    "id": 3,
+                    "value": "Become an Official Sponsor"
+                },
+                {
+                    "id": 4,
+                    "value": "Early Access to All Episodes"
+                },
+                {
+                    "id": 5,
+                    "value": "Free Stikers and Merch"
+                }
+            ]
+        }
+    ]
+}

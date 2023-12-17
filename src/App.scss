@@ -1,0 +1,8 @@
+.App {
+    @apply h-screen w-full overflow-y-scroll overflow-x-hidden relative;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        @apply hidden;
+    }
+}

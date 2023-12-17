@@ -1,0 +1,46 @@
+{
+    "episodes": [
+        {
+            "id": 1,
+            "title": "Are you a Perplexed Mind Person?",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+            "keywords": ["mind-behaviour", "health"],
+            "url": "/assets/images/cover-3.png"
+        },
+        {
+            "id": 2,
+            "title": "Type of Social Classes of People",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  ",
+            "keywords": ["social-class", "wealth"],
+            "url": "/assets/images/cover-5.png"
+        },
+        {
+            "id": 3,
+            "title": "How to Deal with Self–Confidence",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.  ",
+            "keywords": ["self-estreem", "health"],
+            "url": "/assets/images/cover-1.png"
+        },
+        {
+            "id": 4,
+            "title": "Women's Rights? Is it alright?",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.          ",
+            "keywords": ["women's right"],
+            "url": "/assets/images/cover-4.png"
+        },
+        {
+            "id": 5,
+            "title": "Tesla Autopilot Controversy",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+            "keywords": ["automation", "tech"],
+            "url": "/assets/images/cover-2.png"
+        },
+        {
+            "id": 6,
+            "title": "Tesla Autopilot Controversy",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+            "keywords": ["automation", "tech"],
+            "url": "/assets/images/cover-2.png"
+        }
+    ]
+}

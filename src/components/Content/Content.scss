@@ -1,0 +1,117 @@
+@use '/src/assets/global';
+
+.Content {
+    @include global.paddingInline;
+    @apply relative flex flex-col items-center gap-8 bg-tertiary py-28;
+    .content-shape-2 {
+        @apply block absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0  h-auto;
+        z-index: 1;
+    }
+    h2 {
+        @apply text-[40px] relative;
+        font-family: Montserrat Alternates;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+    h3 {
+        font-family: Montserrat Alternates;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    ul {
+        @apply relative flex flex-col gap-4 sm:gap-8 lg:grid lg:grid-cols-2 lg:grid-flow-row;
+        .content-shape-1 {
+            @apply absolute right-0 w-32 translate-x-[55%] -translate-y-[55%];
+        }
+        li {
+            @apply flex flex-col gap-2 bg-white p-4 rounded-md;
+            border: 2px solid #000000;
+            &.withShadow {
+                box-shadow: 10px 10px 0px 0px #81adc8;
+            }
+            .episodes-item-image {
+                @apply flex flex-col sm:flex-row items-center gap-2 sm:gap-8;
+                img {
+                    @apply sm:w-[30%] rounded-xl;
+                }
+                .episodes-item-content {
+                    @apply flex flex-col items-center sm:items-start;
+                    p:nth-of-type(1) {
+                        @apply text-vermillon text-center sm:text-left;
+                        //styleName: Body/Bold;
+                        font-family: Montserrat Alternates;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                    }
+
+                    p:nth-of-type(2) {
+                        //styleName: Caption/Medium;
+                        @apply text-center sm:text-left;
+                        font-family: Montserrat Alternates;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                    }
+
+                    hr {
+                        @apply w-full my-2;
+                    }
+                    h3 {
+                        @apply text-vermillon text-center sm:text-left;
+                        font-family: Montserrat Alternates;
+                        font-size: 23px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: -0.02em;
+                    }
+                }
+            }
+            .episodes-bottom {
+                @apply w-full flex flex-col sm:flex sm:justify-between sm:flex-row items-center  gap-2;
+                .keywords-container {
+                    @apply flex flex-row gap-4;
+                    button {
+                        @apply px-4 py-2 rounded-md;
+                        border: 1px solid #4d4d4d;
+                        color: #4d4d4d;
+                        font-family: Montserrat Alternates;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+                .hosted-by {
+                    @apply flex flex-col sm:flex-row items-center gap-2;
+                    //styleName: Small/Bold;
+                    font-family: Montserrat Alternates;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    & > button {
+        @apply w-full sm:w-1/5;
+        @apply px-8 py-5 rounded-lg bg-black text-white;
+        font-family: Montserrat Alternates;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        box-shadow: 3px 3px 0px 0px #00000040;
+    }
+}

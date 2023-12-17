@@ -1,0 +1,65 @@
+@use '/src/assets/global';
+.Features {
+    @include global.paddingInline;
+    @apply w-full flex flex-col items-center py-28 gap-16 relative;
+    .About-shape-3 {
+        @apply block absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0  h-auto;
+        z-index: 1;
+    }
+    h2 {
+        @apply text-[40px] relative;
+        font-family: Montserrat Alternates;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        text-align: center;
+        &::before {
+            content: '';
+            @apply absolute top-0 right-0 w-20 h-20 -translate-y-1/2;
+            background-image: url('/assets/images/Scribbleicons-1.png');
+            background-size: cover;
+        }
+    }
+    h3 {
+        font-family: Montserrat Alternates;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .Features-liste {
+        @apply w-full  flex flex-row flex-wrap items-center gap-8  lg:grid lg:grid-cols-3 lg:grid-flow-row lg:gap-2 lg:gap-y-16;
+        div {
+            @apply flex flex-col items-center w-full sm:w-[47%] lg:w-full lg:h-full;
+            h3 {
+                //styleName: H3/Style 2;
+                font-family: Montserrat Alternates;
+                font-size: 23px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                text-align: center;
+            }
+            p {
+                //styleName: Body/Medium;
+                font-family: Montserrat Alternates;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }
+    }
+    button {
+        @apply w-full sm:w-1/5;
+        @apply px-8 py-5 rounded-lg bg-black text-white;
+        font-family: Montserrat Alternates;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        box-shadow: 3px 3px 0px 0px #00000040;
+    }
+}

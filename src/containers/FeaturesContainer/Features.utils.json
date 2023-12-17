@@ -1,0 +1,40 @@
+{
+    "features": [
+        {
+            "id": 1,
+            "title": "Topic by Request",
+            "description": "Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.",
+            "url": "/assets/images/Scribbleicons.png"
+        },
+        {
+            "id": 2,
+            "title": "Exclusive Content",
+            "description": "Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.",
+            "url": "/assets/images/Shining starsicons.png"
+        },
+        {
+            "id": 3,
+            "title": "Join the Community",
+            "description": "Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.",
+            "url": "/assets/images/Face 1icons.png"
+        },
+        {
+            "id": 4,
+            "title": "Livestreaming Access",
+            "description": "Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.",
+            "url": "/assets/images/Face 5icons.png"
+        },
+        {
+            "id": 5,
+            "title": "Exclusive Episodes & Merch",
+            "description": "Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.",
+            "url": "/assets/images/Fireicons.png"
+        },
+        {
+            "id": 6,
+            "title": "And much more!",
+            "description": "Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.",
+            "url": "/assets/images/Staricons.png"
+        }
+    ]
+}
